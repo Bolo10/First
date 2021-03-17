@@ -1,5 +1,8 @@
 {
   "name": "first",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>task</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label>Para: </ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>Asunto: </ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">Mensaje: </ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="calendar-number-outline" slot="end"></ion-icon>
+        <ion-datetime value="2021-03-16" min="2021" max="2030" displayFormat="DD MMM" monthShortNames="ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic"></ion-datetime>
+    </ion-item>
+    <ion-label>
+        <ion-text>
+            {{status}}
+        </ion-text>
+    </ion-label>
+    <ion-button (click)=RecordAudio()></ion-button>
+    <ion-button (click)=StopRecording()></ion-button>
+</ion-content>
